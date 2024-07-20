@@ -1,0 +1,48 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #1f272d;
+}
+.loader{
+  display: flex;
+  width: 60px;
+  height: 50px;
+  /* background-color: cadetblue; */
+}
+.loader span{
+  display: block;
+  width: 8px;
+  height: 100%;
+  background-color: #7700ff;
+  margin: auto;
+  animation: animate 1s infinite ease-in-out;
+  animation-delay: calc(.1s * var(--i));
+}
+@keyframes animate{
+  0%, 40%, 100%{
+    transform: scaleY(.05);
+  }
+  20%{
+    transform: scaleY(1);
+  }
+}
+.loader span:nth-child(1){
+  background-color: #7700ff;
+}
+.loader span:nth-child(2){
+  background-color: #00f2ff;
+}
+.loader span:nth-child(3){
+  background-color: #59ff00;
+}
+.loader span:nth-child(4){
+  background-color: #ffdd00;
+}
+.loader span:nth-child(5){
+  background-color: #ffa200;
+}
+.loader span:nth-child(6){
+  background-color: #ff006a;
+}
